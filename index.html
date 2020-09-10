@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <div class="container-fluid">
+
+    <div class="row">
+       
+           
+        <div class="input col-12">
+            <div>
+            <input type="text" class="inputValue" placeholder="Enter a city">
+            <input type="submit" class="button" value="Submit">
+            <ul class="searchedCities"></ul>
+        </div>
+            <div class="display">
+            <h1 class="name"></h1>
+            <p class="wind"></p>
+            <p class="temp"></p>
+            <p class="humidity"></p>
+            <img id="imgIcon" src="">
+           
+            </div>
+            </div>
+           
+        </div>
+    
+    </div>
+
+    <div class="list"></div>
+    
+
+    <div class="five-day-div bg-light p-3 m-3 w-100">
+        <div class="bg-light">
+            <h5 class="text-dark">Five Day Weather Forecast</h5>
+        </div>
+    <div class="row justify-content-center">
+        <div id="day0" class="card-body mx-2 my-2">
+            <h5 id="0date"></h5>
+            <p id="0five_day_temp"></p>
+            <p id="0five_day_humidity"></p>
+            <img id="0five_day_icon" src="">
+        </div>
+        <div id="day1" class="card-body mx-2 my-2">
+                <h5 id="1date"></h5>
+                <p id="1five_day_temp"></p>
+                <p id="1five_day_humidity"></p>
+                <img id="1five_day_icon" src="">
+        </div>
+        <div id="day2" class="card-body mx-2 my-2"> 
+                <h5 id="2date"></h5>
+                <p id="2five_day_temp"></p>
+                <p id="2five_day_humidity"></p>
+                <img id="2five_day_icon" src="">
+        </div>
+        <div id="day3" class="card-body mx-2 my-2">
+                <h5 id="3date"></h5>
+                <p id="3five_day_temp"></p>
+                <p id="3five_day_humidity"></p>
+                <img id="3five_day_icon" src="">
+        </div>
+        <div id="day4" class="card-body mx-2 my-2">
+                <h5 id="4date"></h5>
+                <p id="4five_day_temp"></p>
+                <p id="4five_day_humidity"></p>
+                <img id="4five_day_icon" src="">
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="weather.js"></script>
 </body>
 </html>

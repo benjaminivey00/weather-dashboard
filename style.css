@@ -1,0 +1,60 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.card{
+    padding: 50px 50px;
+}
+
+.input{
+    text-align: right;
+    margin: 100px 0px;
+    
+    
+}
+/* .wind{
+    text-align: right;
+} */
+
+.inputValue{
+    width: 50px;
+   float: left;
+   display: block;
+}
+
+.row {
+   
+   
+}
+
+#listGroup{
+    background-color: blue;
+    float: right;
+}
+
+input[type="text"]{
+    height: 50px;
+    width: 600px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 10px;
+    align-content: center;
+}
+
+input[type="submit"]{
+    height: 50px;
+    width: 100px;
+    background: blue;
+    font-weight: bold;
+    font-size: 20px;
+    /* justify-content: right; */
+    float: left;
+}
+
+.display{
+    text-align: right;
+    align-content: center;
+    
+}
