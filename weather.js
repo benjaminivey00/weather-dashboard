@@ -5,12 +5,14 @@ var windSpeed = document.querySelector('.wind')
 var temp = document.querySelector('.temp')
 var humid = document.querySelector('.humidity')
 
-
+let storedCity = localStorage.getItem("city")
 
 const APIkey = '&appid=d7165ec74f3a581aa62dd4486c6f30fb';
 // const queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + APIkey
 
 let city = $('.inputValue').val();
+
+// function mainSearch(){
 
 $(".button").on('click', function(){
 
@@ -29,8 +31,7 @@ console.log(response)
 $('.name').text("City:" + response.name);
 $('.humidity').text("Humidity:" + response.main.humidity)
 $('.wind').text("Wind Speed:" + response.wind.speed)
-// $("#imgIcon").attr({"src": "http://openweathermap.org/img/w/" + current_data.weather[0].icon + ".png",
-//   "height" : "100px", "width":"100px"});
+
 
 var tempF = (response.main.temp - 273.15) * 1.80 + 32;
 $(".temp").text("Temperature (F) " + tempF.toFixed(2));
@@ -39,11 +40,16 @@ $(".temp").text("Temperature (F) " + tempF.toFixed(2));
 getCurrentForcast(response)
 makeList()
 })
+
+localStorage.setItem("city", JSON.stringify(city));
+storedCity
 })
+// }
 
 function makeList() {
     let listItem = $("<li>").addClass("list-group-item").text(city);
     $(".list").append(listItem);
+    $('.list').click('click', )
   }
 
 
@@ -81,6 +87,8 @@ function getCurrentForcast() {
                         }   
         }
     });
+
+  
 
   
 
